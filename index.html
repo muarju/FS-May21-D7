@@ -44,7 +44,7 @@ EX12: Write a function to color the price of each product in a different one eve
         .product img{width: 100%;
         height: auto;}
         .price{font-size: 24px;
-        line-height: normal;
+        line-height: 0px;
         font-weight: 800;
         color: #eb0028;}
         .buttons{padding-bottom: 10px;}
@@ -56,15 +56,43 @@ EX12: Write a function to color the price of each product in a different one eve
                 color: white;}
         .amazon{background-color: black;
         color: white;}
-        footer{padding: 10px;}
+        .contact{width: 100%;
+            padding: 10px;
+            background: silver;}
+        input[type=text],input[type=email], select{
+            width: 25%; 
+            padding: 8px;
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-top: 6px; 
+            margin-bottom: 16px; 
+            resize: vertical 
+            }
+        textarea{
+            width: 25%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-bottom: -20px; 
+            resize: vertical 
+        }
+        footer{width: 100%;
+        padding: 10px;
+        background: black;
+        color: blanchedalmond;}
         .footer-left{float: left;}
         .footer-right{float: right;}
+        .btn-contact{background: slategray;}
     </style>
+    
 </head>
 <body>
-    <h1>Welcome to Awesome Shop</h1>
-    <h3>Top Sale</h3>
+    
     <div class="container">
+        <h1>Welcome to Awesome Shop</h1>
+    <h3>Top Sale</h3>
         <table class="products">
             <tr>
                 <td>
@@ -79,45 +107,62 @@ EX12: Write a function to color the price of each product in a different one eve
                 <td>
                     <div class="product">
                         <img src="images/product-2.jpg">
-                        <h4>Affinity  M20</h4>
+                        <h4>Spectronic XR</h4>
                         <p>Buy latest Affinity M20 with us</p>
-                        <h5 class="price">$498</h5> 
+                        <h5 class="price">$101</h5> 
                         <div class="buttons"><a href="#"><button type="button" class="amazon">Buy with Amazon</button></a><a href=""><button type="button">Buy Now</button></a></div>
                     </div>
                 </td>
                 <td>
                     <div class="product">
                         <img src="images/product-3.jpg">
-                        <h4>Affinity  M20</h4>
+                        <h4>Tencho 10 Lite</h4>
                         <p>Buy latest Affinity M20 with us</p>
-                        <h5 class="price">$498</h5> 
+                        <h5 class="price">$201</h5> 
                         <div class="buttons"><a href="#"><button type="button" class="amazon">Buy with Amazon</button></a><a href=""><button type="button">Buy Now</button></a></div>
                     </div>
                 </td>
                 <td>
                     <div class="product">
                         <img src="images/product-4.jpg">
-                        <h4>Affinity  M20</h4>
+                        <h4>Spots ERA 5X</h4>
                         <p>Buy latest Affinity M20 with us</p>
-                        <h5 class="price">$498</h5> 
+                        <h5 class="price">$701</h5> 
                         <div class="buttons"><a href="#"><button type="button" class="amazon">Buy with Amazon</button></a><a href=""><button type="button">Buy Now</button></a></div>
                     </div>
                 </td>
                 <td>
                     <div class="product">
                         <img src="images/product-5.jpg">
-                        <h4>Affinity  M20</h4>
+                        <h4>PO V40 ThinQ</h4>
                         <p>Buy latest Affinity M20 with us</p>
-                        <h5 class="price">$498</h5> 
+                        <h5 class="price">$699</h5> 
                         <div class="buttons"><a href="#"><button type="button" class="amazon">Buy with Amazon</button></a><a href=""><button type="button">Buy Now</button></a></div>
                     </div>
                 </td>
             </tr>
         </table>
+        <div class="contact">
+            <form class="form" action="/action_page.php">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email" name="email">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Name" name="name">
+                <label for="massage">Message:</label>
+                <textarea rows="2"></textarea>
+                <button type="submit" class="btn-contact">Submit</button>
+              </form>
+        </div>
+        <footer>
+            <div class="footer-left">Copyrith &copy; 2021, Awesome Shop. </div>
+            <div class="footer-right">187, Vorby, Stockholm, Sweden</div>
+        </footer>
     </div>
-    <footer>
-        <div class="footer-left">Copyrith &copy; 2021, Awesome Shop. </div>
-        <div class="footer-right">187, Vorby, Stockholm, Sweden</div>
-    </footer>
+<script type="text/javascript">
+
+const SelectH1 = function(a){
+    document.getElementById("yourH1_element_Id").innerHTML = a;
+}
+</script>
 </body>
 </html>
