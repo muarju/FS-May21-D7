@@ -1,0 +1,123 @@
+<!--
+    You have been assigned to the creation of a Smartphone Shop Website. The homepage you're about to write is just a showcase of the products of the shop with some extra information. No shopping cart / checkout features are required.
+Complete exercises from 1 to 6 with just plain HTML
+
+
+
+EX1.: Add an h1 tag with the name of your shop
+EX2.: Add a TABLE with the top 5 products of your shop
+EX3.: Insert for each product an image, a title, a description and a price
+EX4.: Add links to existing Amazon products for each item in the table
+EX5.: Add a footer with the address and the name of your shop
+EX6.: Add a message board where the user can type a message in it (no real posting/saving features required!)
+
+
+
+This additional exercises, from 7 to 12, use JavaScript as well
+
+EX7.: Write a function to change the h1 text
+EX8.: Write a function to change the page background color
+EX9.: Write a function to change the footer address with a fake one
+EX10.: Write a function to add a CSS class to every Amazon link
+EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
+EX12: Write a function to color the price of each product in a different one every time it's invoked
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Shop</title>
+    <style>
+        h1{text-align: center;}
+        .container{ margin-left: auto;
+        margin-right: auto;
+        width: 98%}
+        .products{width: 100%;}
+        .products tr td{width: 20%;
+        text-align:center}
+        .product{width: 250px;
+                 border: 1px solid rgb(117, 117, 117);
+                 background-color: #f4f4f4;}
+        .product img{width: 100%;
+        height: auto;}
+        .price{font-size: 24px;
+        line-height: normal;
+        font-weight: 800;
+        color: #eb0028;}
+        .buttons{padding-bottom: 10px;}
+        button{padding: 5px;
+                background-color: red;
+                border: none;
+                margin: 10px;
+                padding: 8px 12px;
+                color: white;}
+        .amazon{background-color: black;
+        color: white;}
+        footer{padding: 10px;}
+        .footer-left{float: left;}
+        .footer-right{float: right;}
+    </style>
+</head>
+<body>
+    <h1>Welcome to Awesome Shop</h1>
+    <h3>Top Sale</h3>
+    <div class="container">
+        <table class="products">
+            <tr>
+                <td>
+                    <div class="product">
+                        <img src="images/product-1.jpg">
+                        <h4>Affinity  M20</h4>
+                        <p>Buy latest Affinity M20 with us</p>
+                        <h5 class="price">$498</h5> 
+                        <div class="buttons"><a href="#"><button type="button" class="amazon">Buy with Amazon</button></a><a href=""><button type="button">Buy Now</button></a></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product">
+                        <img src="images/product-2.jpg">
+                        <h4>Affinity  M20</h4>
+                        <p>Buy latest Affinity M20 with us</p>
+                        <h5 class="price">$498</h5> 
+                        <div class="buttons"><a href="#"><button type="button" class="amazon">Buy with Amazon</button></a><a href=""><button type="button">Buy Now</button></a></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product">
+                        <img src="images/product-3.jpg">
+                        <h4>Affinity  M20</h4>
+                        <p>Buy latest Affinity M20 with us</p>
+                        <h5 class="price">$498</h5> 
+                        <div class="buttons"><a href="#"><button type="button" class="amazon">Buy with Amazon</button></a><a href=""><button type="button">Buy Now</button></a></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product">
+                        <img src="images/product-4.jpg">
+                        <h4>Affinity  M20</h4>
+                        <p>Buy latest Affinity M20 with us</p>
+                        <h5 class="price">$498</h5> 
+                        <div class="buttons"><a href="#"><button type="button" class="amazon">Buy with Amazon</button></a><a href=""><button type="button">Buy Now</button></a></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="product">
+                        <img src="images/product-5.jpg">
+                        <h4>Affinity  M20</h4>
+                        <p>Buy latest Affinity M20 with us</p>
+                        <h5 class="price">$498</h5> 
+                        <div class="buttons"><a href="#"><button type="button" class="amazon">Buy with Amazon</button></a><a href=""><button type="button">Buy Now</button></a></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <div class="footer-left">Copyrith &copy; 2021, Awesome Shop. </div>
+        <div class="footer-right">187, Vorby, Stockholm, Sweden</div>
+    </footer>
+</body>
+</html>
