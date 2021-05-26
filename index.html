@@ -159,10 +159,47 @@ EX12: Write a function to color the price of each product in a different one eve
         </footer>
     </div>
 <script type="text/javascript">
+    function changeH1Text() {
+      document.querySelector("h1").innerHTML = "Changed!";
+    }
 
-const SelectH1 = function(a){
-    document.getElementById("yourH1_element_Id").innerHTML = a;
-}
+    function changeBackgroundColor() {
+      document.querySelector("body").style.backgroundColor = "green";
+    }
+
+    function changeFakeAddress() {
+      document.querySelector("footer > div:nth-child(2)").innerHTML =
+        "This is a FAKE ADDRESS";
+    }
+
+    function addClassToLinks() {
+      for (let node of document.querySelectorAll("a")) {
+        node.classList.add("giant-font");
+      }
+    }
+
+    function toggleImagesClass() {
+      for (let image of document.querySelectorAll("img")) {
+        image.classList.toggle("hidden"); // if the class is already set, remove it. otherwise, add it
+      }
+    }
+
+    function setRandomColor() {
+      const color = getRandomColor();
+      for (let price of document.querySelectorAll("price")) {
+        price.style.color = color;
+      }
+    }
+
+    function getRandomColor() {
+      const red = Math.round(Math.random() * 255);
+      const green = Math.round(Math.random() * 255);
+      const blue = Math.round(Math.random() * 255);
+
+      return "rgb(" + red + ", " + green + ", " + blue + ")";
+    }
+  
+
 </script>
 </body>
 </html>
